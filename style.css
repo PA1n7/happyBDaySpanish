@@ -1,0 +1,54 @@
+.circles {
+    border-radius: 50%;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    transition: transform 1s, width 1.5s, height 1.5s;
+}
+
+h1 {
+    text-align: center;
+    font-size: 15px;
+    transform: translateX(-45%);
+    transition: transform 1s;
+}
+
+#sec {
+    transition: transform 1s;
+}
+
+#bottomSquare {
+    background-color: red;
+    width: 102px;
+    height: 102px;
+    position: fixed;
+    /*border: 1px solid;*/
+    transition: transform 1s;
+}
+
+#fullHeart:hover #sec{
+    border-top: 1px solid;
+    border-right: 1px solid;
+    transform: translateX(50px);
+}
+
+#fullHeart:hover #first{
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+
+#fullHeart:hover #bottomSquare{
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    transform: translate(36px, 51px) rotate(45deg);
+}
+
+#fullHeart:hover .circles{
+    width: 125px;
+    height: 125px;
+}
+
+#fullHeart:hover h1 {
+    transform: translate(-41%, 100px);
+}
